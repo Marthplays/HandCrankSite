@@ -37,8 +37,8 @@ body {
     background-color: var(--color-red-950);
 }
 
-.btn:first-child:active {
-    background-color: var(--color-red-900);
+.btn:active {
+    background-color: var(--color-red-900) !important;
 }
 
 .dropdown-center {
