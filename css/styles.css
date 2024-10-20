@@ -1,0 +1,98 @@
+:root {
+    --color-red-primary: #c4151c;
+    --color-grey-secundary: #263238;
+    --color-cream: #ece0d1;
+    --color-red-900: #84181c;
+    --color-red-950: #48070a;
+    --font-primary: 'Inter', sans-serif;
+
+}
+
+body {
+    font-family: var(--font-primary);
+}
+
+.text-grey {color: var(--color-grey-secundary);}
+.text-cream {color: var(--color-cream);}
+.bg-red-primary {background-color: var(--color-red-primary);}
+.bg-red-dark {background-color: var(--color-red-900);}
+.bg-cream {background-color: var(--color-cream);}
+.border-dark {border-color: var(--color-red-950) !important;}
+.bg-grey-secundary {
+    background-color: var(--color-grey-secundary); 
+    border-radius: 7px;
+}
+
+.btn-footer {
+    color: var(--color-cream);
+    background-color: var(--color-grey-secundary);
+}
+
+.btn-primary {
+    background-color: var(--color-red-900);
+    border: var(--color-red-900);
+}
+
+.btn-primary:hover {
+    background-color: var(--color-red-950);
+}
+
+.btn:first-child:active {
+    background-color: var(--color-red-900);
+}
+
+.dropdown-center {
+    left: 50% !important;
+    right: auto !important;
+    transform: translate(-50%, 0) !important;
+}
+
+.dropdown-item:hover {
+    background-color: var(--color-red-950);
+    color: var(--color-cream);
+}
+
+.accordion {
+    --bs-accordion-btn-icon: var(--color-cream);
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: var(--color-red-950);
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+}
+
+
+.hr-filled {
+    background-color: var(--color-red-950); 
+    height: 10px;  
+    border-radius: 20px;
+}
+
+.img-thumbnail {
+    background-color: var(--color-grey-secundary);
+}
+
+.carousel-indicators {
+    margin-left: 40%;
+    margin-right: 40%;
+}
+
+.border-primary {
+    border-color: var(--color-red-950) !important;
+}
+
+.card {
+    transition: all 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card__equipe:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 10px var(--color-red-950);
+}

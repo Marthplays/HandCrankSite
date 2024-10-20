@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hand Crank</title>
+    <link rel="icon" type="image/png" href="./favicon/favicon-48x48.png" sizes="48x48" />
+    <link rel="icon" type="image/svg+xml" href="./favicon/favicon.svg" />
+    <link rel="shortcut icon" href="./favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="MyWebSite" />
+    <link rel="manifest" href="./favicon/site.webmanifest" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <link 
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,600;1,14..32,600&display=swap" 
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/styles.css"/>
+  </head>
+  <body class="bg-cream">
+    <nav class="navbar navbar-expand-lg px-4 bg-red-primary fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand text-white" href="#home">
+          <img
+            src="./img/icone_manivela.jpeg"
+            alt="Logo da página"
+            width="50"
+            height="50"
+            class="me-3 rounded-5"
+          />
+          Hand Crank
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse text-white"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link text-white" aria-current="page" href="#home">
+                Storytelling
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#equipe">
+                Equipe
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#arma">
+                Arma
+              </a>
+            </li>
+            <li class="nav-item dropdown text-white">
+              <a
+                class="nav-link dropdown-toggle text-white"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Mídias
+              </a>
+              <ul class="dropdown-menu bg-red-primary">
+                <li>
+                  <a class="dropdown-item text-white text-center" href="#videos"
+                    >Vídeos</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider"/>
+                <li>
+                  <a class="dropdown-item text-white text-center" href="#imagens"
+                    >Imagens</a
+                  >
+                </li>
+  
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#hardware">
+                Hardware
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#robocup">
+                Robocup
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#formularioContato">
+                Contato
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section class="container-fluid h-100 px-5 pt-5" id="home">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <h1 class="display-1 text-center text-grey py-5">Nossa História</h1>
+        <p class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6 text-grey lead px-4">
+          O grupo Manivélicos surgiu a partir de um trio de jovens acadêmicos
+          que receberam como projeto de curso criar um robô de combate - e assim
+          surgiu o Hand Crank. Assim como a nomeação do grupo, o robô recebe este
+          apelido graças ao personagem Manivela, do filme Robôs.
+          <br />
+          <br />
+          Desde os primeiros dias do projeto, o objetivo dos Manivélicos sempre
+          foi criar uma máquina capaz de alcançar as metas e de ter efetividade no quesito movimentação e combate.
+          Estamos cursando o primeiro ano de Sistemas de Informação e
+          todos do grupo são muito dedicados e entusiastas
+          da área de computação.
+        </p>
+        <img
+          src="./img/Manivela.png"
+          alt="Imagem do personagem que inspira nosso robô"
+          class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6 rounded-5 img-fluid mb-4"
+        />
+      </div>
+    </section>
+    <hr 
+      class="hr-filled border m-5" 
+      id="equipe"
+    />
+    <section class="container-fluid px-0">
+      <h4 class="text-center display-3 mb-4 mx-auto text-grey">
+        Equipe
+      </h4>
+      <div>
+        <div class="row mx-auto">
+          <div class="col-lg"> 
+            <div 
+              class="card border border-primary shadow-0 mb-4 mb-lg-0 card__equipe mx-auto" 
+              style="width: 20rem;"
+              >
+                <div 
+                  class="bg-image hover-overlay ripple" 
+                  data-mdb-ripple-color="light"
+                >
+                <img 
+                  class="img-fluid p-1" 
+                  src="./img/lucianofoto.png"
+                  />
+                <a href="#!">
+                  <div class="mask"></div>
+                </a>
+              </div>
+              <div 
+                class="card-body text-grey" 
+                style="width: 20rem;"
+              >
+                <h5 class="card-title text-center">
+                  Luciano Henrique
+                </h5>
+                <p class="card-text">
+                  Gerente de projeto e programador. Entusiasta em linguagens de programação, trabalha no desenvolvimento de software e conexões do projeto.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg">
+            <div class="card border border-primary shadow-0 mb-4 mb-lg-0 card__equipe mx-auto" style="width: 20rem;">
+              <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                <img 
+                  class="img-fluid p-1"
+                  src="./img/matheusfoto.jpg"
+                />
+                <a href="#!">
+                  <div class="mask""></div>
+                </a>
+              </div>
+            
+              <div class="card-body text-grey">
+                <h5 class="card-title text-center">
+                  Matheus Rocha
+                </h5>
+                <p class="card-text">
+                  Projetista e Web Designer. Desenvolve e constrói o projeto e a parte física do robô. Além de ser responsável pelo desenvolvimento web.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg">
+            <div class="card border border-primary shadow-0 card__equipe mx-auto" style="width: 20rem;">
+              <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                <img class="img-fluid p-1 object-fit-none" src="./img/vitorfot.jpg"/>
+                <a href="#!">
+                  <div class="mask"></div>
+                </a>
+              </div>
+            
+              <div class="card-body text-grey">
+                <h5 class="card-title text-center">
+                  Vitor Silva
+                </h5>
+                <p class="card-text">
+                  Diretor de marketing e financeiro. Analisa e desenvolve projeções sobre o projeto, responsável pela produção dos primeiros protótipos e pelo design.
+                </p>
+            
+            
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr 
+      class="hr-filled border m-5" 
+      id="imagens"
+    />
+    <section class="container-fluid pb-3">
+      <div class="container">
+        <h4 class="text-center display-3 mb-4 mx-auto text-grey">
+          Imagens
+        </h4>
+        <div class="row">
+          <div class="col-12">
+            <div
+              id="carouselExampleIndicators"
+              class="carousel slide"
+              data-bs-ride="true"
+            >
+              <div class="carousel-indicators d-none bg-grey-secundary">
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="2"
+                  aria-label="Slide 3"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="3"
+                  aria-label="Slide 4"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="4"
+                  aria-label="Slide 5"
+                ></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="./img/vista_frontal.jpeg"
+                    class="mx-auto img-thumbnail d-flex justify-content-center align-items-center"
+                    alt="Vista frontal do robô"
+                  />
+                  <div class="carousel-caption mx-auto w-25 pb-0">
+                    <p class="bg-grey-secundary mb-0">
+                      Vista Frontal (Caixa)
+                    </p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="./img/vista_superior.jpeg"
+                    class="mx-auto img-thumbnail d-flex justify-content-center align-items-center"
+                    alt="Vista superior do robô"
+                  />
+                  <div class="carousel-caption mx-auto w-25 pb-0">
+                    <p class="bg-grey-secundary mb-0">
+                      Vista Superior (Caixa)
+                    </p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="./img/vista_superior_sem_caixa.jpeg"
+                    class="mx-auto img-thumbnail d-flex justify-content-center align-items-center"
+                    alt="Vista superior do robô sem a caixa protetiva"
+                  />
+                  <div class="carousel-caption mx-auto w-25 pb-0">
+                    <p class="bg-grey-secundary mb-0">
+                      Vista Superior
+                    </p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="./img/vista_frontal_ligado.jpeg"
+                    class="mx-auto img-thumbnail d-flex justify-content-center align-items-center"
+                    alt="Vista frontal do robô ligado"
+                  />
+                  <div class="carousel-caption mx-auto w-25 pb-0">
+                    <p class="bg-grey-secundary mb-0">
+                      Vista Frontal Ligado
+                    </p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="./img/vista_superior_ligado.jpeg"
+                    class="mx-auto img-thumbnail d-flex justify-content-center align-items-center"
+                    alt="Vista superior do robo sem a caixa protetiva ligado"
+                  />
+                  <div class="carousel-caption mx-auto w-25 pb-0">
+                    <p class="bg-grey-secundary mb-0">
+                      Vista Superior Ligado
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon bg-grey-secundary"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Anterior</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon bg-grey-secundary"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Próximo</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr class="hr-filled m-5 border" id="arma"/>
+    <section class="container-fluid">
+        <h4
+          class="text-center text-grey display-4 mb-4"
+        >
+          Arma
+        </h4>
+      <div class="row mx-0">
+        <div class="col-xl-6 px-md-0 ps-xl-5">
+          <p class="text-grey mx-5 mt-2 mb-4 m-xl-0 lead">Após alguns estudos e debates entre o grupo, chegamos à conclusão que a melhor escolha de arma seria um palito atrelado à uma bola espinhosa. Acreditamos que um maior perímetro de acerto será mais eficaz contra outros robôs móveis.</p>
+        </div>
+        <div class="col-xl-6 px-5">
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button
+                  class="accordion-button collapsed bg-red-dark text-white"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                  aria-expanded="false"
+                  aria-controls="collapseOne"
+                >
+                  <i class="bi bi-chevron-compact-down me-auto"></i>
+                  O que é uma maça ?
+                </button>
+              </h2>
+              <div
+                id="collapseOne"
+                class="accordion-collapse collapse show"
+                aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body text-grey">
+                  <p>É uma arma formada por um cabo comprido, com uma pesada bola de ferro dentada, numa das extremidades, sendo muito usada no período medieval.</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button
+                  class="accordion-button collapsed bg-red-dark text-white"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo"
+                >
+                  
+                  <i class="bi bi-chevron-compact-down me-auto"></i>
+                  Como funciona ?
+                </button>
+              </h2>
+              <div
+                id="collapseTwo"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingTwo"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body text-grey">
+                  <p>Criamos um mecanismo que baseado em sensores de ativação: Quando a chave do sensor fosse pressionada, geraria uma corrente elétrica que faria a maça rodar 180º inclinada para diagonal superior, saindo da área do robô e atingindo a bexiga inimiga.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button
+                  class="accordion-button collapsed bg-red-dark text-white"
+                  type="button "
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                >
+                  <i class="bi bi-chevron-compact-down me-auto"></i>
+                  Materiais Usados
+                </button>
+              </h2>
+              <div
+                id="collapseThree"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingThree"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body text-grey">
+                  <p>Utilizamos um palito de churrasco atrelado a uma bola de isopor (com agulhas) em uma de suas pontas, conectados ao Servo Motor MG995.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr class="hr-filled border m-5" id="hardware"/>
+    <section class="container-fluid">
+      <div class="row">
+        <h4 class="row display-3 mt-3 mb-5  justify-content-center text-grey">Hardware</h4>
+        <div class="row text-center mx-0">
+          <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 mb-3">
+            <div class="card">
+              <img
+                src="./img/arduinomega.jpeg"
+                class="card-img-top img-fluid"
+                alt="Microcontrolador Arduino MEGA 2560" text-grey
+              />
+              <div class="card-body text-grey">
+                <h5 class="card-title">Arduino MEGA 2560</h5>
+                <p class="card-text my-3">
+                  Microcontrolador utilizado para gravar programações e executá-las.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 mb-3">
+            <div class="card">
+              <img
+                src="./img/jumpers.jpeg"
+                class="card-img-top img-fluid"
+                alt="Três conjuntos de jumpers MxM, MxF e FxF"
+              />
+              <div class="card-body text-grey">
+                <h5 class="card-title">Jumpers</h5>
+                <p class="card-text mb-5">
+                  Utilizados para transferir sinais lógicos.
+                </p>
+                
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 mb-3">
+            <div class="card">
+              <img
+                src="./img/soquete.webp"
+                class="card-img-top img-fluid"
+                alt="O suporte AA com capacidade para seis pilhas"
+              />
+              <div class="card-body text-grey">
+                <h5 class="card-title">Soquete de 6 pilhas AA</h5>
+                <p class="card-text mb-5">
+                  Suporte das pilhas utilizadas para fornecer energia.
+                </p>
+              </div>
+            </div>
+          </div> 
+          <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 mb-3">
+            <div class="card">
+              <img
+                src="./img/rodas.jpg"
+                class="card-img-top img-fluid"
+                alt="Rodas junto com o Motor DC 3-6V com Caixa de Redução e Eixo Duplo"
+              />
+              <div class="card-body text-grey">
+                <h5 class="card-title">Motor DC 3V-6V Eixo Duplo</h5>
+                <p class="card-text my-3">
+                  É responsável pelo movimento do robô.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 mb-3">
+            <div class="card">
+              <img
+                src="./img/shield.jpg"
+                class="card-img-top img-fluid"
+                alt="Circuito integrado de 4 canais e Ponte-H"
+              />
+              <div class="card-body text-grey">
+                <h5 class="card-title">Shield de motor</h5>
+                <p class="card-text my-3">
+                  Auxilia na operação de multiplos motores.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 mb-3">
+            <div class="card">
+              <img
+                src="./img/bluetooth.jpeg"
+                class="card-img-top img-fluid"
+                alt="Módulo Bluetooth HC-05 para comunicação dos dispositivos"
+              />
+              <div class="card-body text-grey">
+                <h5 class="card-title">Shield de bluetooth</h5>
+                <p class="card-text">
+                  Possibilita comunicação via bluetooth entre o robô e outros dispositivos.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 mb-3">
+            <div class="card">
+              <img
+                src="./img/protoboard.jpeg"
+                class="card-img-top img-fluid" 
+                alt="Protoboard de 400 furos para montagem de projetos"
+              />
+              <div class="card-body text-grey">
+                <h5 class="card-title">Protoboard</h5>
+                <p class="card-text my-3">
+                  Responsável por conectar os componentes via jumpers.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 mb-3">
+            <div class="card">
+              <img
+                src="./img/chave_de_fim_de_curso.png"
+                class="card-img-top img-fluid"
+                alt="Chave de fim de curso com haste curta"
+              />
+              <div class="card-body text-grey">
+                <h5 class="card-title">Chave de Fim de Curso</h5>
+                <p class="card-text mb-4">
+                  Sensor utilizado para ativar a arma do robô.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 mb-3">
+            <div class="card">
+              <img
+                src="./img/fita_led.webp"
+                class="card-img-top img-fluid"
+                alt="Fita LED RGB destacada e desligada"
+              />
+              <div class="card-body text-grey">
+                <h5 class="card-title">Fita LED</h5>
+                <p class="card-text">
+                  Utilizada para demonstrar quando o robô está ligado; pronto pra atacar; com a arma disparada.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr class="hr-filled border m-5" id="robocup"/>
+    <section class="container-fluid">
+      <h3 class="display-3 my-5 text-center text-grey"><img class="img-fluid" src="./img/robocup-logo.png" alt="Logo da competição Robocup"><img class="img-fluid pt-3" src="./img/next-logo.png" alt="Logo do evento do NEXT"></h3>
+      <div class="row m-5">
+        <div class="col-12 col-lg-6">
+          <img class="img-fluid rounded-5 mb-4 m-lg-0" src="./img/robocup.jpg" alt="Dois robôs batalhando em um ringue tematizado pela FIAP.">
+        </div>
+        <div class="col-12 col-lg-6">
+          <p class="lead text-grey">A Robocup é a competição mais antiga da FIAP. Os alunos dos 1°s anos de Sistemas de Informação constroem robôs para participar de duelos, onde o principal objetivo é estourar o balão que o adversário carrega. Para isso, todas as máquinas possuem armas em seu corpo. Mas as regras também exigem o funcionamento pleno do robô: após estourar o balão do oponente, ele deve recolher sua arma, só assim é considerado o vencedor.</p>
+          <p class="lead text-grey">As equipes que passarem das eliminatórias realizadas na própria instituição, participam do mata-mata no evento NEXT, onde poderão ser premiadas com um prêmio de até R$ 5 mil, além de um magnífico shape exclusivo do evento.</p>
+          <div class="d-flex justify-content-center">
+            <a class="btn btn-primary mt-3 mt-lg-0 me-2" href="https://www.fiap.com.br/2017/10/23/robocup-3/">ROBOCUP</a><a class="btn btn-primary mt-3 mt-lg-0" href="https://www.fiap.com.br/next/">NEXT</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr class="hr-filled border m-5" id="videos"/>
+    <section class="container-fluid">
+      <h3 class="display-3 my-5 text-center text-grey">Vídeos</h3>
+        <div class="row">
+           <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 p-4">
+              <div class="ratio ratio-16x9">
+                <iframe class="rounded-2" src="https://www.youtube.com/embed/zuZKtSVjgkw" title="YouTube video" allowfullscreen></iframe>
+              </div>
+           </div>
+           <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 p-4">
+              <div class="ratio ratio-16x9">
+                <iframe class="rounded-2" src="https://www.youtube.com/embed/lduQ44Evelg" title="YouTube video" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div> 
+    </section>
+    <hr class="hr-filled border m-5" id="formularioContato"/>
+    <section class="container-fluid">
+      <div class="m-5">
+        <h3 class="display-3 my-5 text-center text-grey">Contato</h3>
+        <div class="row">
+          <div class="col-sm-12 col-md-5 col-lg-5">
+            <div class="row">
+              <h5><i class="bi bi-geo-alt-fill"></i> Endereço:</h5>
+              <p>Av. Lins de Vasconcelos, 1264 - Aclimação, São Paulo - SP, 01538-001</p>
+              <h5><i class="bi bi-telephone"></i> Telefone:</h5>
+              <p>+55 11 94020-1834 (Celular)</p>
+              <h5><i class="bi bi-at"></i> Email:</h5>
+              <p>manivelicos@gmail.com</p>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-7 col-lg-7">
+            <form>
+              <h4 class="text-center pb-2">FALE CONOSCO:</h4>
+              <div class="form-row">
+                <div class="form-group pb-2">
+                  <input type="text" class="form-control" id="nome" name="nome" placeholder="Nome Completo:" required>
+                </div>
+                <div class="form-group">
+                  <input type="tel" class="form-control" id="telefone" name="telefone" placeholder="Telefone:" required>
+                </div>
+              </div>
+              <div class="form-row d-md-grid pt-4">
+                <div class="form-group pb-2">
+                  <input type="email" class="form-control" id="email" name="email" placeholder="Email:" required>
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control" id="assunto" name="assunto" placeholder="Assunto:" required>
+                </div>
+              </div>
+              <div class="form-group pt-4">
+                <textarea rows="5" class="form-control" id="mensagem" name="mensagem" placeholder="Mensagem:" required></textarea>
+              </div>
+              <div class="form-group text-center pt-4">
+                <button type="submit" class="btn btn-primary">Enviar</button>
+              </div>
+            </form>
+          </div>
+        </div>
+    </section>
+
+    <footer class="container-fluid bg-red-primary text-cream ">
+      <div class="row py-3">
+        <div class=" col-lg-6">
+          <div class="text-center text-lg-start">
+            <p>Copyright <i class="bi bi-c-circle"></i> 2024 Desenvolvido por Manivélicos. Todos direitos reservados.</p>
+          </div>
+        </div>
+        <div class="col-12 col-lg-6 text-center text-lg-end">
+          <a class="text-decoration-none text-cream pe-3 pe-lg-2" href="#equipe">Sobre nós</a>
+          <a class="text-decoration-none text-cream pe-3 pe-lg-2" href="">Serviços</a>
+          <a class="text-decoration-none text-cream" href="">Política de privacidade</a>
+        </div>
+        <hr class="text-cream mt-2 mt-lg-0">
+      </div>
+      <div class="row pb-3">
+        <div class="col-lg-6 text-center">
+          <h4 class="text-center pb-1">Links Úteis</h4>
+            <div>
+              <div class="col-12 d-flex justify-content-around">
+                <a class="text-decoration-none text-cream " href="#home"><i class="bi bi-book"></i> Storytelling</a>
+                <a class="text-decoration-none text-cream" href="#equipe"><i class="bi bi-people"></i> Equipe</a>
+                <a class="text-decoration-none text-cream" href="#arma"><i class="bi bi-hammer"></i> Arma</a>
+                <a class="text-decoration-none text-cream" href="#videos"><i class="bi bi-camera-reels"></i> Vídeos</a>
+              </div>
+              <div class="col-12 d-flex justify-content-around">
+                <a class="text-decoration-none text-cream ms-md-2 pe-md-5" href="#imagens"><i class="bi bi-card-image"></i> Imagens</a>
+                <a class="text-decoration-none text-cream" href="#hardware"><i class="bi bi-cpu"></i> Hardware</a>
+                <a class="text-decoration-none text-cream" href="#robocup"><i class="bi bi-robot"></i> Robocup</a>
+                <a class="text-decoration-none text-cream" href="#formularioContato"><i class="bi bi-person-lines-fill"></i> Contato</a>
+              </div>
+            </div>
+        </div>
+        <hr class="d-block d-lg-none mt-4 ">
+        <div class="col-12 col-lg-6 text-center text-lg-end pb-2">
+          <h5>Inscreva-se no nosso Email para ficar sempre atualizado</h5>
+          <div>
+            <form>
+              <input type="email" name="email" id="email-novidades" placeholder="Email:" required>
+              <button type="submit" class="float-right my-2 mr-2 btn py-1 rounded-1 btn-footer btn-dark rounded-0">Inscrever-se</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    >
+    </script>
+  </body>
+</html>
